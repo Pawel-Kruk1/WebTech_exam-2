@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="style.css">  </head>
+<body>
+    <header>
+        <h1>Contact Me</h1>
+    </header>
+
+    <main>
+        <section class="contact-form">
+            <h2>Get in Touch!</h2>
+			<img src="2.gif" width="500" height="300">
+			<img src="1.gif" width="500" height="300">
+            <form action="mailto:40514431@live.napier.ac.uk" method="post" enctype="text/plain">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required> 
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required> 
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" required></textarea> 
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>
+<!--***CODE EXPLENATION***
+
+<DOCTYPE html>, <html lang="en">, <head>: These standard elements declare the document type, language, and contain metadata, as explained previously.
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> This meta tag is crucial for responsive design. It instructs browsers to adjust the page layout to fit different screen sizes.
+
+<title>Contact Me</title>: Sets the title of the page.
+
+<link rel="stylesheet" href="style.css">: Links an external CSS file for styling.
+
+<body>: Contains the visible content of a page.
+<header><h1>Contact Me</h1></header>: A simple header with a main heading.
+
+<main>: Designates the primary content area of the page.
+
+<section class="contact-form">: Creates a section specifically for a contact form, likely styled in your CSS.
+
+<h2>Get in Touch!</h2>: A subheading for the form.
+
+<img ...>: Two image tags to embed decorative GIFs.
+
+<form ...>: The core of a contact form.
+
+action="mailto:40514431@live.napier.ac.uk": When the form is submitted, the data will be packaged into an email addressed to this email.
+
+method="post": Specifies how the form data is sent to the server (in this case, within the email body).
+
+enctype="text/plain": Defines the encoding of the form data (plain text for emails).
+
+<label ...>, <input ...>: Pairs of labels and text input fields for the user's name and email. The required attribute makes these fields mandatory.
+
+<textarea ...>: Creates a text area for the user to type their message (required also applies).
+
+<button type="submit">Send Message</button>: The button to submit the form data.-->

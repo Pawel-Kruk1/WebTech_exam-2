@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif; 
+    background-color: #f0f0f0;
+    color: #333; 
+    margin: 0;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    min-height: 100vh; 
+}
+
+header {
+    background-color: #34568B; 
+    color: white; 
+    padding: 20px;
+    text-align: center;
+    width: 100%; 
+}
+
+button#startButton { 
+    background-color: #4CAF50; 
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px; 
+}
+/* Quiz Page Styling */
+#questionContainer {
+    margin: 20px auto;
+    width: 60%; 
+}
+
+#choices button { 
+    display: block;
+    margin: 10px 0; 
+}
+
+#feedback {
+    margin-top: 15px; 
+}
+
+#nextButton {
+    display: none; 
+}
+
+/* ***CODE EXPLANATION***
+ body { ... }
+
+font-family: Arial, sans-serif; Sets the default font to Arial for the whole page. If Arial is not available, the browser will use a generic sans-serif font.
+background-color: #f0f0f0; Sets a light gray background color for the entire page.
+color: #333; Sets the default text color to a dark gray.
+margin: 0; Removes default browser margins for the body, ensuring your layout takes up the full space.
+display: flex; Enables Flexbox layout for the body container.
+flex-direction: column; Arranges the body's content in a vertical column rather than a row.
+align-items: center; Centers content horizontally within the body.
+min-height: 100vh; Makes the body at least the full height of the viewport (browser window).
+
+header { ... }
+background-color: #34568B; Sets a dark blue-ish background for the header.
+color: white; Makes the text within the header white.
+padding: 20px; Adds 20 pixels of padding around the content of the header, creating space.
+text-align: center; Centers the text within the header.
+width: 100%; Makes the header span the full width of its container.
+
+button#startButton { ... }
+background-color: #4CAF50; Sets a green color for the "Start Quiz" button.
+color: white; Makes the button text white.
+padding: 15px 30px; Adds padding, making the button larger and easier to click.
+border: none; Removes the default button border.
+border-radius: 5px; Gives the button slightly rounded corners.
+font-size: 18px; Sets a larger font size for the button text.
+
+#questionContainer { ... }
+margin: 20px auto; Adds 20 pixels of top/bottom margin and centers the question container horizontally.
+width: 60%; Makes the question container take up 60% of its parent container's width.
+
+#choices button { ... }
+display: block; Ensures answer buttons take up the full available width.
+margin: 10px 0; Adds 10 pixels of margin above and below each button.
+
+#feedback { ... }
+margin-top: 15px; Adds space above the feedback area.
+#nextButton { ... }
+
+display: none; Initially hides the "Next" button. */

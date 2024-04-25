@@ -1,0 +1,102 @@
+body {
+ margin: 0;
+ padding: 0;
+ max-width: inherit;
+ background: #1C1C1C;
+ color: #1C1C1C
+}
+header{
+ font-size: xx-large;
+ text-align: center;
+ padding: 0.3em 0;
+ background-color: #3498DB;
+ color: #1C1C1C;
+}
+footer {
+ font-size: medium;
+ text-align: center;
+ padding: 0.3em 0;
+ background-color: #4CBB17;
+ color: #1C1C1C;
+}
+
+nav a { 
+    display: inline-block; 
+    padding: 10px 20px;   
+    background-color: #4CAF50;   
+    color: white;          
+    border: none;          
+    border-radius: 5px;    
+    text-decoration: none; 
+    cursor: pointer;       
+}
+
+
+nav a:hover {
+    background-color: #3e8e41; 
+}
+
+main { background: #F5F5F5; }
+aside { background: #D3D3D3; }
+body {
+ min-height: 100vh;
+ display: flex;
+ flex-direction: column;
+}
+.container {
+ display: flex;
+ flex: 1;
+}
+main {
+ flex: 1;
+ padding: 0 20px;
+}
+nav {
+ flex: 0 0 180px;
+ padding: 0 10px;
+ order: -1;
+}
+aside {
+ flex: 0 0 130px;
+ padding: 0 10px;
+}
+/* ***CODE EXPALNATION***
+body{...}
+margin: 0; padding: 0; ensures consistent spacing across browsers by removing default margins/padding on the body.
+background: #1C1C1C; color: #1C1C1C creates a dark background with slightly lighter text (this might be too low contrast for accessibility).
+min-height: 100vh; display: flex; flex-direction: column; sets up a basic vertical Flexbox layout that fills the viewport.
+
+header:
+font-size: xx-large; Extra-large header text.
+text-align: center; Centers the header text.
+padding: 0.3em 0; Adds a bit of spacing above and below the text.
+background-color: #3498DB; color: #1C1C1C; A contrasting blue background with dark text.
+
+footer:  (Very similar to header styling) -
+font-size: medium; Medium-sized footer text.
+background-color: #4CBB17; color: #1C1C1C - Green background with dark text.
+
+nav a:  (Styles links within your navigation)
+display: inline-block; Allows you to control width and padding.
+padding: 10px 20px; Adds spacing around links, making them button-like.
+background-color: #4CAF50; color: white; Green buttons with white text.
+border: none; border-radius: 5px; Removes default border, adds rounded corners.
+text-decoration: none; Removes the default underline on links.
+cursor: pointer; Changes the cursor to a hand on hover.
+
+nav a:hover:  (Hover effect for navigation links)
+background-color: #3e8e41; Darker green on hover for visual feedback.
+
+main, aside:
+Simple background colors to differentiate content sections.
+
+.container { display: flex; flex: 1; } A container for flexible layout, allowing its children to expand.
+
+main { flex: 1; ... } The main content area will take up the available remaining space.
+
+nav { flex: 0 0 180px; ...} Navigation is fixed at 180px width.
+
+aside { flex: 0 0 130px; ... } Aside section is fixed at 130px width.
+
+order: -1; Visually places the navigation before the main content, even if it comes later in the HTML.
+*/
